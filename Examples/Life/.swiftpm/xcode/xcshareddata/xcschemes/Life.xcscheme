@@ -45,6 +45,13 @@
          Location = "workspace"
          FilePath = ".swiftpm/build-and-run.sh">
       </PathRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "TOOLCHAINS"
+            value = "org.swift.59202403071a"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

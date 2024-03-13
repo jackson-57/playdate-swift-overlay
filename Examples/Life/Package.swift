@@ -36,7 +36,7 @@ let package = Package(
     .target(
       name: "Life",
       dependencies: [
-        .product(name: "CPlaydate", package: "swift-playdate-examples")
+        .product(name: "CPlaydate", package: "playdate-swift-overlay")
       ],
       swiftSettings: swiftSettingsSimulator)
   ])
