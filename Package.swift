@@ -35,7 +35,7 @@ let cSettingsSimulator: [CSetting] = [
 ]
 
 let package = Package(
-  name: "swift-playdate-examples",
+  name: "playdate-swift-overlay",
   products: [
     .library(name: "Playdate", targets: ["Playdate"]),
     .library(name: "CPlaydate", targets: ["CPlaydate"]),
@@ -48,5 +48,4 @@ let package = Package(
     .target(
       name: "CPlaydate",
       cSettings: cSettingsSimulator),
-  ],
-  swiftLanguageVersions: [.version("6"), .v5])
+  ])

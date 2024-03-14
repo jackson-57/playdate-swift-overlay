@@ -36,8 +36,7 @@ let package = Package(
     .target(
       name: "SwiftBreak",
       dependencies: [
-        .product(name: "Playdate", package: "swift-playdate-examples")
+        .product(name: "Playdate", package: "playdate-swift-overlay")
       ],
       swiftSettings: swiftSettingsSimulator)
-  ],
-  swiftLanguageVersions: [.version("6"), .v5])
+  ])
