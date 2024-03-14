@@ -1,6 +1,6 @@
 public import CPlaydate
 
-var graphicsAPI: playdate_graphics { playdateAPI.graphics.unsafelyUnwrapped.pointee }
+public var graphicsAPI: playdate_graphics { playdateAPI.graphics.unsafelyUnwrapped.pointee }
 
 /// Access the Playdate graphics system.
 public enum Graphics {}
