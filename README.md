@@ -1,8 +1,13 @@
-# Playdate Swift Overlay
+# Archived
+I made this repository at a point in my life where I wasn't able to make the time commitment needed to maintain such a project.
+
+For a modern alternative, please see https://github.com/finnvoor/PlaydateKit.
+
+## Playdate Swift Overlay
 
 An expanded overlay for Swift development on Playdate
 
-## Why Swift for Playdate
+### Why Swift for Playdate
 
 The [Playdate](https://play.date) is a tiny handheld gaming console developed by [Panic](https://panic.com) featuring a Cortex M7 processor and a 400 by 240 1-bit display. Panic provides an SDK for building Playdate games in both C and Lua and is equipped with a Playdate Simulator. 
 
@@ -10,14 +15,14 @@ Most Playdate games are traditionally written in Lua for ease of development, bu
 
 Embedded Swift solves this problem by pairing high-level ergonomics with low-level performance, while also providing memory safety guarantees which improve productivity and eliminate a common source of bugs. 
 
-## Why a fork?
+### Why a fork?
 While Apple's work on Swift Embedded and their example implementation for Playdate has made Swift possible on the Playdate (and we're greatly appreciative of it!), the Swift overlay (wrapping/binding) for the Playdate C API is incomplete, and the maintainer [has stated](https://github.com/apple/swift-playdate-examples/blob/main/README.md#contributing-to-swift-playdate-examples) that they're not interested in accepting contributions around the overlay. There's been a ton of interest from both the Playdate community and from Panic for Swift on Playdate, so I'm hoping that this repository can serve as a space for interested community members to contribute to those bindings.
 
 I ([@jackson-57](https://github.com/jackson-57)) am new to Swift, but I'm very interested in learning the language to use on the Playdate. I'd like to contribute to the bindings as I learn Swift, but pull requests are encouraged if you'd like to help expand the API.
 
 Do note that until we've gotten our own package and wiki set up, the links below point to Apple's example project.
 
-## Getting Started
+### Getting Started
 
 To start using Swift with the Playdate SDK, you can find guides, articles, and API documentation via the [Package's documentation on the Web][docs] or in Xcode.
 
@@ -30,13 +35,13 @@ To start using Swift with the Playdate SDK, you can find guides, articles, and A
 
 [docs]: https://apple.github.io/swift-playdate-examples/documentation/playdate
 
-### Code of Conduct
+#### Code of Conduct
 
 As with the official Swift Playdate Examples project, we would like this project to foster a diverse and friendly community. We expect contributors to adhere the [Swift.org Code of Conduct](https://swift.org/code-of-conduct/). A copy of this document is [available in this repository][coc].
 
 [coc]: CODE_OF_CONDUCT.md
 
-### Contact information
+#### Contact information
 
 The current code owner of this package is Rauhul Varma ([@rauhul](https://github.com/rauhul)). You can contact him [on the Swift forums](https://forums.swift.org/u/rauhul/summary).
 
