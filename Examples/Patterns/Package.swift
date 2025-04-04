@@ -23,33 +23,20 @@ let swiftSettingsSimulator: [SwiftSetting] = [
   ]),
 ]
 
-let cSettingsSimulator: [CSetting] = [
-  .unsafeFlags([
-    "-DTARGET_EXTENSION",
-    "-I", "\(gccIncludePrefix)/include",
-    "-I", "\(gccIncludePrefix)/include-fixed",
-    "-I", "\(gccIncludePrefix)/../../../../arm-none-eabi/include",
-    "-I", "\(home)/Developer/PlaydateSDK/C_API",
-  ])
-]
-
 let package = Package(
-  name: "playdate-swift-overlay",
+  name: "Patterns",
   products: [
-    .library(name: "Playdate", targets: ["Playdate"]),
-    .library(name: "CPlaydate", targets: ["CPlaydate"]),
-    .library(name: "PlaydateEx", targets: ["PlaydateEx"]),
+    .library(name: "Patterns", targets: ["Patterns"])
+  ],
+  dependencies: [
+    .package(path: "../..")
   ],
   targets: [
     .target(
-      name: "Playdate",
-      dependencies: ["CPlaydate"],
-      swiftSettings: swiftSettingsSimulator),
-    .target(
-      name: "CPlaydate",
-      cSettings: cSettingsSimulator),
-    .target(
-      name: "PlaydateEx",
-      dependencies: ["Playdate", "CPlaydate"],
-      swiftSettings: swiftSettingsSimulator),
+      name: "Patterns",
+      dependencies: [
+        .product(name: "Playdate", package: "playdate-swift-overlay"),
+        .product(name: "PlaydateEx", package: "playdate-swift-overlay")
+      ],
+      swiftSettings: swiftSettingsSimulator)
   ])
